@@ -1,0 +1,14 @@
+{
+    "name": "Twitch Chat Lookback",
+    "description": "Views a chatter's message history (limited)",
+    "version": "0.1",
+    "manifest_version": 3,
+    "background": {
+        "service_worker": "src/background.js"
+    },
+    "permissions": ["storage"],
+    "action": {
+        "default_popup": "src/popup.html"
+    },
+    "host_permissions": ["http://127.0.0.1:3001/messages"]
+}
